@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #6a6a6a
+    }
+
+
+    .amazon:hover {
+      color: #c5c5b8;
+    }
+
+    .target:hover {
+      color: #c5c5b8;
+    }
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start Amazon Icon -->
+      <div id="amazon" onclick="navigate(this.id)" class="social">
+        <span class="icon amazon"><i class="fa-brands fa-amazon"></i></span>
+      </div>
+      <!-- End amazon Icon -->
+
+      <!-- Start target Icon -->
+      <div id="target" onclick="navigate(this.id)" class="social">
+        <span class="icon target"><i class="fa-solid fa-bullseye"></i></span>
+      </div>
+      <!-- End target Icon -->
+
+
+
+    </div>
+
+
+
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "amazon")
+          window.open("https://www.amazon.com/gp/help/customer/display.html?nodeId=G2UQTUL5CHRCA7BL", '_blank').focus(); //Add the url to your blog
+
+        else if (id === "target") {
+          window.open("https://help.target.com/help/targetguesthelparticledetail?articleId=ka95d000000oOOWAA2&articleTitle=How+do+I+create+a+tax-exempt+Target.com+account%3F&clickSearchVar=Search+Results&searchQuery=free", '_blank').focus(); //Add your email after "mailto:""
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
