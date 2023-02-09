@@ -6,26 +6,72 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
-.btn {
-  background-color: #c5c5b8;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  border-radius: 10px;
-  font-size: 21px;
-  cursor: pointer;
-}
+    :root {
+      --my-color:#c5c5b8;
+      --my-color-accent:#c5c5b8;
+    }
 
-</style>
+    button {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+
+    i {
+      padding-right: 2px;
+    }
+
+    .btn {
+      text-align: center;
+      color: #ffffff;
+      font-family: 'Muli';
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .my-color {
+      background-color: var(--my-color);
+    }
+
+    .my-color:hover {
+      background-color: var(--my-color-accent);
+    }
+    .rounded {
+      border-radius: 20px;
+    }
+
+    .small {
+      padding: 5px 20px;
+      font-size: 10px;
+    }
+
+    .mid {
+      padding: 10px 40px;
+      font-size: 12px;
+    }
+
+    .large {
+      padding: 15px 60px;
+      font-size: 18px;
+    }
+  </style>
+
 </head>
+
 <body>
 
-  <button class="btn"><i class="fa-brands fa-amazon"></i></button>
-
+  <button class="btn large my-color rounded" type="button" onclick="navigate()"> Amazon</button>
+  
   <script>
     function navigate() {
-      window.open("https://www.amazon.com/gp/help/customer/display.html?nodeId=G2UQTUL5CHRCA7BL", '_parent').focus();
+      window.open("https://www.amazon.com/gp/help/customer/display.html?nodeId=G2UQTUL5CHRCA7BL ", '_blank').focus();
     }
   </script>
+
 </body>
+
 </html>
